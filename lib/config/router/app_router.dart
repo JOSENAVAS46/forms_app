@@ -1,0 +1,13 @@
+import 'package:go_router/go_router.dart';
+
+import '../../presentation/screens/_export_screens.dart';
+
+final appRouter = GoRouter(routes: [
+  GoRoute(path: '/', builder: (context, state) => const HomeScreen()),
+  GoRoute(
+      path: '/cubits', builder: (context, state) => const CubitCounterScreen()),
+  GoRoute(
+      path: '/blocs', builder: (context, state) => const BlocCounterScreen()),
+  GoRoute(
+      path: '/register', builder: (context, state) => const RegisterScreen()),
+]);
